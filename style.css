@@ -64,8 +64,8 @@ body{
 }
 
 #imgres1{
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
 }
 #vs{
     height: 150px;
@@ -73,16 +73,14 @@ body{
     margin: 2px;
 }
 #imgres2{
-    height: 150px;
-    width: 150px;
-}
-.show{
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-    margin: auto;
+    height: 160px;
+    width: 160px;
 }
 #result{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     height: 150px;
     width: 150px;
+    background-size: cover;
 }

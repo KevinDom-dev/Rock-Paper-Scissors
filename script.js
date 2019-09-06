@@ -9,7 +9,7 @@
     let cata = document.getElementById("Catapult");
     let comp = document.getElementById("Computer");
     let calc = document.getElementById("Run");
-    let res = document.getElementById("result");
+    const res = document.getElementById("result");
     let resIm1 = document.getElementById("imgres1");
     let resIm2 = document.getElementById("imgres2");
     let vs = document.getElementById("vs");
@@ -43,42 +43,57 @@
         
         if (playerChoice === compChoice){
             res.setAttribute("style", "background-image: url(" + "img/tie.png" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/tie.png' alt='It is a tie!>"
+            console.log("tie")
         }
-        else if (playerChoice[0] && compChoice[1]){
+        else if (playerChoice===0 && compChoice === 1){
             res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
+            console.log("lose")
         }
-        else if (playerChoice[0] && compChoice[2]){
+        else if (playerChoice===0 && compChoice===2){
             res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+           // res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
-        else if (playerChoice[0] && compChoice[3]){
+        else if (playerChoice===0 && compChoice===3){
             res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
-        else if (playerChoice[1] && compChoice[0]){
+        else if (playerChoice===1 && compChoice===0){
             res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
-        else if (playerChoice[1] && compChoice[2]){
+        else if (playerChoice===1 && compChoice===2){
             res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
         }
-        else if (playerChoice[1] && compChoice[3]){
+        else if (playerChoice===1 && compChoice===3){
             res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
         }
-        else if (playerChoice[2] && compChoice[0]){
-            res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+        else if (playerChoice===2 && compChoice===0){
+           res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+           // res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
         }
-        else if (playerChoice[2] && compChoice[1]){
+        else if (playerChoice===2 && compChoice===1){
             res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
-        else if (playerChoice[2] && compChoice[3]){
+        else if (playerChoice===2 && compChoice===3){
             res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+            //res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
         }
-        else if (playerChoice[3] && compChoice[0]){
-            res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+        else if (playerChoice===3 && compChoice===0){
+          res.setAttribute("style", "background-image: url(" + "img/ulose.jpeg" + "); background-size: cover");
+          //  res.innerHTML = "<img src='img/ulose.jpeg' alt='Loooooooser!'>"
         }
-        else if (playerChoice[3] && compChoice[1]){
+        else if (playerChoice===3 && compChoice===1){
             res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+          //  res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
-        else if (playerChoice[3] && compChoice[2]){
-            res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+        else if (playerChoice===3 && compChoice===2){
+          res.setAttribute("style", "background-image: url(" + "img/uwin.png" + "); background-size: cover");
+          //  res.innerHTML = "<img src='img/uwin.png' alt='Winner!'>"
         }
 
     });
