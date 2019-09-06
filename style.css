@@ -1,3 +1,88 @@
-#scissors{
-    
+body{
+
+}
+.btn-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.button{
+    border-style: solid;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+
+#Scissors{
+    background-image: url("img/scissorhands.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Rock{
+    background-image: url("img/Rock.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Paper{
+    background-image: url("img/toilet-paper.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Catapult{
+    background-image: url("img/catapult.png");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Computer{
+    background-image: url("img/Robot.png");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Run{
+    background-image: url("img/run.jpeg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+#Reset{
+    background-image: url("img/Reset.png");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+.results{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+#imgres1{
+    height: 150px;
+    width: 150px;
+}
+#vs{
+    height: 150px;
+    width: 150px;
+    margin: 2px;
+}
+#imgres2{
+    height: 150px;
+    width: 150px;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin: auto;
+}
+#result{
+    height: 150px;
+    width: 150px;
 }
