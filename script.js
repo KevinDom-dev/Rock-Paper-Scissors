@@ -13,6 +13,7 @@
     let resIm1 = document.getElementById("imgres1");
     let resIm2 = document.getElementById("imgres2");
     let vs = document.getElementById("vs");
+    let reset = document.getElementById("Reset");
 
     scissors.addEventListener("click", function () {
        console.log("scissors");
@@ -97,5 +98,7 @@
         }
 
     });
-
+    reset.addEventListener("click", function () {
+        window.location.reload(true);
+    })
 })();
